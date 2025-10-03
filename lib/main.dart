@@ -49,15 +49,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Лихачёв Артём Сергеевич\nИКБО-06-22\n22И0775',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 24, color: Colors.brown),
+            Padding(
+              padding: EdgeInsets.all(50),
+              child: Text(
+                'Лихачёв Артём Сергеевич\nИКБО-06-22\n22И0775',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 24, color: Colors.brown),
+              ),
             ),
-            SizedBox(
-              width: 50,
-              height: 50,
-            ),
+
             ElevatedButton(
               onPressed: null,
               style: ButtonStyle(
