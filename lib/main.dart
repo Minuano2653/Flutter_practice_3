@@ -54,7 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 24, color: Colors.brown),
             ),
-
+            SizedBox(
+              width: 50,
+              height: 50,
+            ),
             ElevatedButton(
               onPressed: null,
               style: ButtonStyle(
