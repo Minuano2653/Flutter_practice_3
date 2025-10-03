@@ -45,13 +45,22 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Center(
-        child: Text(
-          'Лихачёв Артём Сергеевич\nИКБО-06-22\n22И0775',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 24,
-            color: Colors.brown
+      body: Center(
+        child: ElevatedButton(
+          onPressed: null,
+          style: ButtonStyle(
+            backgroundColor: WidgetStateProperty.all(Colors.pink),
+            shape: WidgetStateProperty.all(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(24),
+              ),
+            ),
+          ),
+          child: const Text(
+            'Нажми меня как следует',
+            style: TextStyle(
+              color: Colors.white
+            ),
           ),
         )
       )
