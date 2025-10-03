@@ -46,23 +46,30 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: null,
-          style: ButtonStyle(
-            backgroundColor: WidgetStateProperty.all(Colors.pink),
-            shape: WidgetStateProperty.all(
-              RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Лихачёв Артём Сергеевич\nИКБО-06-22\n22И0775',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 24, color: Colors.brown),
+            ),
+
+            ElevatedButton(
+              onPressed: null,
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.all(Colors.pink),
+                shape: WidgetStateProperty.all(
+                  RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+                ),
+              ),
+              child: const Text(
+                'Нажми меня, Артём',
+                style: TextStyle(color: Colors.white),
               ),
             ),
-          ),
-          child: const Text(
-            'Нажми меня как следует',
-            style: TextStyle(
-              color: Colors.white
-            ),
-          ),
-        )
+          ],
+        ),
       )
     );
   }
